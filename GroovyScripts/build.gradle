@@ -1,0 +1,76 @@
+group 'org.tiaa.cth'
+
+ext {
+	atomFrameworkVersion = '3.9.+'
+	jaxbVersion = '2.2.6'
+	cthSdkVersion = '1.0.+'
+	
+	// Override these if you want to use newer versions
+	// The atom-web plugin will force the use of at least these versions
+	//springFrameworkVersion = '4.0.5.RELEASE'
+	//springWSVersion = '2.2.0.RELEASE'
+	//springSecurityVersion = '3.2.4.RELEASE'
+	//jerseyVersion = '2.11'
+	//logbackVersion = '1.1.2'
+	//slf4jVersion = '1.7.7'
+}
+
+apply plugin: 'atom-groovy'
+apply plugin: 'atom-web'
+
+// This javadoc block will skip any java packages with the keywords
+// 'internal' or 'generated' as part of the package structure
+javadoc {
+	exclude '**/internal/**'
+	exclude '**/generated/**'
+}
+
+// If you need to change the context root of the application when deploying into eclipse - you can use this as a sample
+// For more details see section 38.3 in http://www.gradle.org/docs/current/userguide/eclipse_plugin.html
+eclipse {
+	wtp {
+		component {
+			contextPath = '/cth-event-service-rs-v1'
+
+ 			// You can also add more source/deploy path mappings
+			//resource sourcePath: '/some/location/in/source/tree', deployPath: '/some/path/in/your/deployed/war'
+		}
+		
+		facet {
+			facet name: 'jst.web', version: '3.0'
+		}
+	}
+}
+
+//test {
+  // Uncomment this to turn off running of tests
+	//enabled = false
+	
+	// Uncomment this (or add additional exclude lines) to exclude class names from executing tests
+	// exclude '**/*Live*
+//}
+
+// Uncomment the integTest {} block if you want to configure anything at integration test time
+//integTest {
+  // Uncomment this to turn off running of tests
+	//enabled = false
+	
+	// Uncomment this (or add additional exclude lines) to exclude class names from executing tests
+	// exclude '**/*Live*
+//}
+
+// These are samples for how to generate sources from a schema
+// By default the schema file lives withing misc/resources/schemas within your project
+// See the documentation for more information
+// xjcGeneration {
+//	schemas = [
+//		This line generates sources for use in the compile scope
+//		schema(schemaFile: 'some-schema-name.xsd', javaPackageName: 'org.tiaa.appname.generated.jaxb.some.java.package.for.new.sources'),
+//
+//		This line generates sources for use in the testRuntime scope
+//		schema(schemaFile: 'some-test-schema-name.xsd', javaPackageName: 'org.tiaa.appname.generated.jaxb.some.java.package.for.new.test.sources', scope: 'TEST_COMPILE'),
+//
+//		This line generates sources for use in the integTestRuntime scope
+//		schema(schemaFile: 'some-integration-test-schema-name.xsd', javaPackageName: 'org.tiaa.appname.generated.jaxb.some.java.package.for.new.integTest.sources', scope: 'INTEGRATION_TEST_COMPILE')
+//	]
+//}

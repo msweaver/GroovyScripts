@@ -1,0 +1,9 @@
+configurations.all {
+	transitive = true
+	resolutionStrategy.cacheDynamicVersionsFor 10, 'minutes'
+}
+
+dependencies {
+	compile "org.tiaa.cth:cth-sdk:$cthSdkVersion"
+
+}
