@@ -2,7 +2,7 @@ group 'org.tiaa.cth'
 
 ext {
 	atomFrameworkVersion = '3.9.+'
-	jaxbVersion = '2.2.6'
+	springFrameworkVersion = '4.0.5.RELEASE'
 	cthSdkVersion = '1.0.+'
 	
 	// Override these if you want to use newer versions
@@ -13,6 +13,8 @@ ext {
 	//jerseyVersion = '2.11'
 	//logbackVersion = '1.1.2'
 	//slf4jVersion = '1.7.7'
+	//
+	//jaxbVersion = '2.2.6'
 }
 
 apply plugin: 'atom-groovy'

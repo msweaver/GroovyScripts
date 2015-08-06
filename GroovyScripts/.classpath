@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry kind="src" output="target/classes/main" path="src/main/groovy"/>
 	<classpathentry kind="src" output="target/classes/main" path="src/main/java"/>
-	<classpathentry kind="src" path="src/main/groovy"/>
 	<classpathentry kind="src" output="target/resources/main" path="src/main/resources"/>
 	<classpathentry kind="src" output="target/classes/test" path="src/test/java"/>
 	<classpathentry kind="src" output="target/resources/test" path="src/test/resources"/>
@@ -227,9 +227,9 @@
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
-	<classpathentry exported="true" kind="var" path="GRADLE_REPO/modules-2/files-2.1/org.tiaa.cth/cth-sdk/1.0.0.121/3469376c9f240350a8615509eb4f3808fae56a5a/cth-sdk-1.0.0.121.jar" sourcepath="GRADLE_REPO/modules-2/files-2.1/org.tiaa.cth/cth-sdk/1.0.0.121/82cd87ffe1dec23750ec2cb11f147ad846ab598c/cth-sdk-1.0.0.121-sources.jar">
+	<classpathentry exported="true" kind="var" path="GRADLE_REPO/modules-2/files-2.1/org.tiaa.cth/cth-sdk/1.0.0.122/1fb8d5ed6f33542bad9fa9532f15d174c09d9990/cth-sdk-1.0.0.122.jar" sourcepath="GRADLE_REPO/modules-2/files-2.1/org.tiaa.cth/cth-sdk/1.0.0.122/7869483297cd66321c96157b596aea50eea1717d/cth-sdk-1.0.0.122-sources.jar">
 		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/weavema/.gradle/caches/modules-2/files-2.1/org.tiaa.cth/cth-sdk/1.0.0.121/f04b3e9f537abfee62e0fa5cf313e6b874b66b20/cth-sdk-1.0.0.121-javadoc.jar!/"/>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/weavema/.gradle/caches/modules-2/files-2.1/org.tiaa.cth/cth-sdk/1.0.0.122/481353d371abd44ab0101f070d3784914bebadf5/cth-sdk-1.0.0.122-javadoc.jar!/"/>
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>

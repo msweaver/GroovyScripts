@@ -5,5 +5,5 @@ configurations.all {
 
 dependencies {
 	compile "org.tiaa.cth:cth-sdk:$cthSdkVersion"
-
+	compile "org.springframework.spring-core:$springFrameworkVersion"
 }

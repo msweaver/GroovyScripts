@@ -3,10 +3,7 @@
 		<property name="context-root" value="/cth-event-service-rs-v1"/>
 		<wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/resources"/>
 		<wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/java"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/resources"/>
+		<wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/groovy"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/groovy"/>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/var/GRADLE_REPO/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.2/b316e9737eea25e9ddd6d88eaeee76878045c6b2/logback-classic-1.1.2.jar">
 			<dependency-type>uses</dependency-type>
@@ -18,9 +15,6 @@
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/var/GRADLE_REPO/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.7/2b8019b6249bb05d81d3a3094e468753e2b21311/slf4j-api-1.7.7.jar">
-			<dependency-type>uses</dependency-type>
-		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/var/GRADLE_REPO/modules-2/files-2.1/org.tiaa.cth/cth-sdk/1.0.0.121/3469376c9f240350a8615509eb4f3808fae56a5a/cth-sdk-1.0.0.121.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/var/GRADLE_REPO/modules-2/files-2.1/org.codehaus.jackson/jackson-all/1.9.11/62246d59c8188052433b28c5fbd50e4e71804f26/jackson-all-1.9.11.jar">
@@ -81,6 +75,9 @@
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/var/GRADLE_REPO/modules-2/files-2.1/com.sun.xml.wsit/xws-security/3.1/3455a3dac1fe72e185cc36a452d981e8b8adff80/xws-security-3.1.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/var/GRADLE_REPO/modules-2/files-2.1/org.tiaa.cth/cth-sdk/1.0.0.122/1fb8d5ed6f33542bad9fa9532f15d174c09d9990/cth-sdk-1.0.0.122.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/var/GRADLE_REPO/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar">

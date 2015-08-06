@@ -1,8 +1,10 @@
 package groovy.eventprocessor
 
+import org.springframework.stereotype.Component
 import org.tiaa.cth.event.EventProcessor
 import org.tiaa.cth.event.model.Event;
 
+@Component("groovyEventProcessor")
 class SupWorld implements EventProcessor {
 
 	@Override
