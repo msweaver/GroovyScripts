@@ -15,7 +15,7 @@ class SupWorld implements EventProcessor {
 
 	@Override
 	public void processEvent(Event arg0) {
-		System.out.println "sup world";
+		System.out.println "oscar rocks";
 	}
 
 }
